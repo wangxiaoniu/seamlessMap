@@ -33,10 +33,7 @@ setInterval(() => {
 
 function setInit() {
     //因为img是变量，是个对象，所以不用加引号，如果是标签li img 等,如就要加引号$('li')
-    $(img[0]).addClass('center')
-    for(let i=1;i<img.length;i++){
-        $(img[i]).addClass('right')
-    } 
+    $(img[0]).addClass('center').siblings().addClass('right')
 }
 
 //获取状态值
