@@ -8,17 +8,7 @@
 setInit()//初始化
 let n = 1;
 setInterval(() => {
-    switch (getN(n)) { 
-        case 1://状态1
-            xxx()
-            break;
-        case 2://状态2
-            xxx()
-            break;
-        case 3://状态3
-            xxx()
-            break;
-    }
+    xxx()
     n++
 }, 3000)
 
