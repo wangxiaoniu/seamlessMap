@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#window{
+    width:300px;
+    height: 300px;
+    margin:50px auto;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+#window > img{
+    position: absolute;
+    top:0;
+    transition:all .3s;
+}
+#window > img.left{
+    left:-100%;
+}
+#window > img.right{
+    left:100%;
+}
+#window > img.center{
+    left:0;
+    z-index: 1;
+}
